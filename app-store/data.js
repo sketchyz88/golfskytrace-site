@@ -39,11 +39,11 @@ export const ideas = [
 export const competitors = [
   {
     name: "Shot Tracer",
-    subtitle: "#1 Golf Ball & 3D Map Tracing",
-    rating: "3.0",
+    subtitle: "#1 Live Tracer, Launch Monitor",
+    rating: "2.3",
     count: "4",
-    price: "$5.99 · In-app purchases",
-    positioning: "Broadcast-style editing, live tracing, and 3D map flyovers.",
+    price: "Free · In-app purchases",
+    positioning: "Live tracing, studio editing, launch-monitor stats, and 3D map flyovers.",
     takeaway: "Show Auto Track working on an imported swing clip and make the free and Pro export options clear.",
     url: "https://apps.apple.com/us/app/shot-tracer/id1140451547"
   },
