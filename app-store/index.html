@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#10261b">
+  <meta name="description" content="The App Store search and product-page tracker for Golf SkyTracer.">
+  <title>App Store Discoverability · Golf SkyTracer</title>
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="dashboard.css">
+  <script type="module" src="dashboard.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Workspace sidebar">
+      <a class="brand" href="#overview">
+        <img src="../icon.png" width="42" height="42" alt="">
+        <span><strong>Golf SkyTracer</strong><small>App Store workspace</small></span>
+      </a>
+      <nav aria-label="Dashboard">
+        <a href="#overview"><span class="nav-icon" aria-hidden="true">◫</span>Overview</a>
+        <a href="#keywords"><span class="nav-icon" aria-hidden="true">⌕</span>Keyword tests</a>
+        <a href="#listing"><span class="nav-icon" aria-hidden="true">▤</span>Listing workshop</a>
+        <a href="#competitors"><span class="nav-icon" aria-hidden="true">◧</span>Competitors</a>
+        <a href="#versions"><span class="nav-icon" aria-hidden="true">◷</span>Release history</a>
+        <a href="#log"><span class="nav-icon" aria-hidden="true">≣</span>Visibility log</a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="storage-status"><span class="status-dot" aria-hidden="true"></span> <span id="storage-label">Saved in this browser</span></div>
+        <button class="sidebar-button" type="button" data-action="backup">Backup &amp; restore</button>
+        <a class="site-link" href="../">GolfSkyTrace.app <span aria-hidden="true">→</span></a>
+      </div>
+    </aside>
+    <main id="content" class="main" tabindex="-1">
+      <div class="topbar">
+        <p>App Store <span aria-hidden="true">/</span> <strong id="section-title">Overview</strong></p>
+        <div class="topbar-actions">
+          <a class="subtle-link" href="https://appstoreconnect.apple.com/" target="_blank" rel="noopener">App Store Connect <span aria-hidden="true">→</span></a>
+          <button class="button button-primary" type="button" data-action="search-check"><span aria-hidden="true">+</span> Log search</button>
+        </div>
+      </div>
+      <p id="storage-warning" class="notice" role="alert" hidden></p>
+      <section id="panel" class="panel" aria-label="Overview">
+        <noscript>Enable JavaScript to use the keyword dashboard and save your checks.</noscript>
+      </section>
+    </main>
+  </div>
+  <dialog id="editor" aria-labelledby="editor-title">
+    <div class="dialog-header">
+      <div><h2 id="editor-title"></h2><p id="editor-description" class="muted"></p></div>
+      <button aria-label="Close" class="icon-button" type="button" data-action="close">×</button>
+    </div>
+    <form id="editor-form">
+      <div id="editor-fields"></div>
+      <p id="editor-error" class="form-error" role="alert" hidden></p>
+      <div id="editor-actions" class="dialog-actions">
+        <button class="button" type="button" data-action="close">Cancel</button>
+        <button id="editor-submit" class="button button-primary" type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>
